@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .custom-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4 max-w-6xl">
+        <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-6 px-8 rounded-lg mb-8 custom-shadow">
+            <h1 class="text-4xl font-bold mb-2">Library Management System</h1>
+            <p class="text-blue-100">Organize, search, and manage your book collection with ease</p>
+        </header>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg p-6 custom-shadow">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800">Add New Book</h2>
+                <form id="addBookForm" class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700 text-sm font-medium mb-2" for="title">Title</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" id="title" name="title" type="text" placeholder="Enter book title" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-medium mb-2" for="author">Author</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" id="author" name="author" type="text" placeholder="Enter author name" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-medium mb-2" for="publicationYear">Publication Year</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" id="publicationYear" name="publicationYear" type="number" placeholder="Enter publication year" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-medium mb-2" for="genre">Genre</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" id="genre" name="genre" type="text" placeholder="Enter book genre" required>
+                    </div>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" type="submit">
+                        Add Book
+                    </button>
+                </form>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 custom-shadow">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800">Search Books</h2>
+                <form id="searchForm" class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700 text-sm font-medium mb-2" for="searchQuery">Search by Title or Author</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" id="searchQuery" name="searchQuery" type="text" placeholder="Enter title or author" required>
+                    </div>
+                    <button class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div id="searchResults" class="bg-white rounded-lg p-6 mt-8 custom-shadow hidden">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Search Results</h2>
+            <ul id="resultsList" class="list-disc pl-5 space-y-2"></ul>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 mt-8 custom-shadow">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Books in the Library</h2>
+            <div id="genreList" class="flex flex-wrap gap-2 mb-6"></div>
+            <div id="bookList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </div>
+
+        <div class="mt-8 text-center">
+            <button id="exportXML" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
+                Export to XML
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
