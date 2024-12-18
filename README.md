@@ -70,7 +70,7 @@ The Library Management System is a web-based application designed to help librar
 
 ## File Structure
 
-```
+``` 
 library-management-system/
 │
 ├── index.html
