@@ -67,7 +67,7 @@ The Library Management System is a web-based application designed to help librar
 3. Use the interface to add new books, search for books, or manage the collection.
 
 4. To export book data, click the "Export to XML" button.
-  
+    
 ## File Structure
 
 ``` 
