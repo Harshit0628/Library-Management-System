@@ -26,7 +26,7 @@ The Library Management System is a web-based application designed to help librar
 - Responsive design for various screen sizes
    
 ## Technologies Used
-
+ 
 - Frontend:
   - HTML5
   - CSS3 (with Tailwind CSS framework)
@@ -57,7 +57,7 @@ The Library Management System is a web-based application designed to help librar
      ```
 
 4. Place the project files in your web server's document root.
-
+  
 ## Usage
 
 1. Access the application through your web browser (e.g., `http://localhost/library-management-system`).
