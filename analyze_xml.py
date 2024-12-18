@@ -4,7 +4,7 @@ from collections import Counter
 def analyze_library_xml(file_path):
     tree = ET.parse(file_path)
     root = tree.getroot()
-
+  
     genres = Counter()
 
     for book in root.findall('book'):
