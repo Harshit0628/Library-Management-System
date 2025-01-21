@@ -25,7 +25,7 @@ The Library Management System is a web-based application designed to help librar
 - Export book data to XML format
 - Responsive design for various screen sizes
    
-##   Technologies Used
+##  Technologies Used
  
 - Frontend:
   - HTML5
