@@ -31,7 +31,7 @@ The Library Management System is a web-based application designed to help librar
   - HTML5
   - CSS3 (with Tailwind CSS framework)
   - JavaScript (ES6+)
-- Backend: 
+- Backend:  
   - PHP
   - MySQL Database
 - Additional Tools:
