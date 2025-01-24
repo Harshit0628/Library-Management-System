@@ -40,7 +40,7 @@ The Library Management System is a web-based application designed to help librar
 
 ## Installation
 
-1. Set up a local web server  (e.g., Apache) with PHP support.
+1. Set up a local web server (e.g., Apache) with PHP support.
 
 2. Import the database schema:
    - Create a new MySQL database named `library`
