@@ -35,7 +35,7 @@ The Library Management System is a web-based application designed to help librar
   - PHP
   - MySQL Database
 - Additional Tools:
-  -  Tailwind CSS for styling
+  - Tailwind CSS for styling
   - Fetch API for AJAX requests
 
 ## Installation
