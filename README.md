@@ -17,7 +17,7 @@ The Library Management System is a web-based application designed to help librar
                      
 ##    Features            
                                                                                         
-- User  Authentication (Register/Login)   
+- User  A uthentication (Register/Login)   
 - Add new books to the library
 - Search books by title or author
 - View books by genre
